@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #dddddd;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -12,7 +20,6 @@ ul {
     row-gap: 30px;
     column-gap: 30px;
     padding: 20px 30px;
-    background-color: #dddddd;
 }
 
 li {
@@ -26,4 +33,20 @@ li {
 li div:first-child {
     font-size: 50px;
     margin-bottom: 5px;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
 }

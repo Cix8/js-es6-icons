@@ -123,7 +123,7 @@ icons.forEach((element) => {
 	const newCard = document.createElement('li');
 	const iconBox = document.createElement('div');
 	const newIcon = document.createElement('i');
-	newIcon.classList.add(`${element.family}`,`${element.prefix}${element.name}`);
+	newIcon.classList.add(`${element.family}`,`${element.prefix}${element.name}`,`${element.color}`);
 	iconBox.append(newIcon);
 	const textBox = document.createElement('div');
 	const newText = document.createElement('span');
