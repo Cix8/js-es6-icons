@@ -115,4 +115,22 @@ const icons = [
 
 ];
 
-console.log(icons);
+const main = document.getElementsByTagName('main')[0];
+const mainUl = document.createElement('ul');
+main.append(mainUl);
+
+icons.forEach((element) => {
+	const newCard = document.createElement('li');
+	const iconBox = document.createElement('div');
+	const newIcon = document.createElement('i');
+	newIcon.classList.add(`${element.family}`,`${element.prefix}${element.name}`);
+	iconBox.append(newIcon);
+	const textBox = document.createElement('div');
+	const newText = document.createElement('span');
+	newText.innerHTML = element.name.toUpperCase();
+	textBox.append(newText);
+	newCard.append(iconBox, textBox);
+	mainUl.append(newCard);
+})
+
+console.log(mainUl);
